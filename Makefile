@@ -1,6 +1,6 @@
 cc = gcc
 bin = factor
-CFLAGS = -O2  -ansi -Werror -Wall
+CFLAGS = -O2  -ansi -pedantic -Wall -Werror
 
 all:	$(bin)
 
