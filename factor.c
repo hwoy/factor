@@ -38,8 +38,9 @@ int
 isPrime (unsigned int i)
 {
   unsigned j;
-
-  if (i >= 0 && i <= 2)
+  if (!i)
+    return 0;
+  else if (i >= 1 && i <= 2)
     return 1;
 
   for (j = 2; j < i; j++)
