@@ -1,5 +1,5 @@
 cc = gcc
-bin = factor
+bin = factor.exe
 CFLAGS = -O2  -ansi -pedantic -Wall -Werror
 
 .PHONY: all clean
@@ -13,5 +13,4 @@ main.o:
 factor.o:
 	$(cc) -c -o factor.o $(CFLAGS) factor.c
 clean:
-	rm -rf main.o factor.o $(bin) *~
-
+	del main.o factor.o $(bin) *~
