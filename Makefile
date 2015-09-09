@@ -1,6 +1,6 @@
 cc = gcc
 bin = factor
-CFLAGS = -O2  -ansi -pedantic -Wall -Werror
+CFLAGS = -O2  -ansi -Wpedantic -Wall -Werror
 
 .PHONY: all clean
 
