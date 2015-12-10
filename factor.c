@@ -43,7 +43,7 @@ isPrime (unsigned int i)
   else if (i >= 1 && i <= 2)
     return 1;
 
-  for (j = 2; j < i; j++)
+  for (j = 2; (j*j) <= i; j++)
     {
       if (!(i % j))
 	return 0;
